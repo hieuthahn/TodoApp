@@ -20,10 +20,11 @@ Content-Type: application/json
 
 POST http://localhost:5000/api/posts
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQ3ZWNkYzBhMGI0ZGQ0NmJmZGE4ODMiLCJpYXQiOjE2NDg5NTAwODJ9.WjRaL4BtZ4xgYc0WK8yyTO43FAvL2t20gJh8UVyhJFQ
 
 {
-    "title": "hieu",
-    "description": "1234",
-    "url": "google.com",
+    "title": "hieu todo",
+    "description": "hieuthu",
+    "url": "shopee.com",
     "status": "LEARNING"
 }
