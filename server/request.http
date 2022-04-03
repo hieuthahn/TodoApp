@@ -2,7 +2,7 @@ POST http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
-    "username": "hieu1",
+    "username": "nam",
     "password": "1234"
 }
 
@@ -20,11 +20,35 @@ Content-Type: application/json
 
 POST http://localhost:5000/api/posts
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQ3ZWNkYzBhMGI0ZGQ0NmJmZGE4ODMiLCJpYXQiOjE2NDg5NTAwODJ9.WjRaL4BtZ4xgYc0WK8yyTO43FAvL2t20gJh8UVyhJFQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQ4ZmJmOWI2ZDBmMWY4NjczNDcwNjkiLCJpYXQiOjE2NDg5NTAyNjV9.YYW0Gsj7_P0LJPImh1nFgE1TI5eTX_FvA3ZNplqX1gw
 
 {
-    "title": "hieu todo",
-    "description": "hieuthu",
-    "url": "shopee.com",
+    "title": "nam todo",
+    "description": "namdesc",
+    "url": "reactjs.org",
     "status": "LEARNING"
 }
+
+###
+
+GET http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQ3ZWNkYzBhMGI0ZGQ0NmJmZGE4ODMiLCJpYXQiOjE2NDg5NTA1NzN9.vI8Vohf5LTgz3-chfc-BvHE4H7C5Qqfsqmkkj24qAhk
+
+###
+
+PUT http://localhost:5000/api/posts/6247f408d1e52840f871a448
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQ3ZWNkYzBhMGI0ZGQ0NmJmZGE4ODMiLCJpYXQiOjE2NDg5NTA1NzN9.vI8Vohf5LTgz3-chfc-BvHE4H7C5Qqfsqmkkj24qAhk
+
+{
+    "title": "Vue",
+    "description": "vuejssss",
+    "url": "vue.org",
+    "status": "LEARNING"
+}
+
+###
+
+DELETE http://localhost:5000/api/posts/6247f408d1e52840f871a448
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQ3ZWNkYzBhMGI0ZGQ0NmJmZGE4ODMiLCJpYXQiOjE2NDg5NTA1NzN9.vI8Vohf5LTgz3-chfc-BvHE4H7C5Qqfsqmkkj24qAhk
